@@ -27,11 +27,13 @@ gem "active_model_serializers"
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry'
+  gem 'rack-cors', :require => 'rack/cors'
 end
 
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
+  gem 'binding_of_caller'
 end
 
 group :test do
