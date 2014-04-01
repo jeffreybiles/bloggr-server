@@ -1,5 +1,10 @@
 BloggrServer::Application.routes.draw do
-  resources :posts
+
+  namespace :api do
+    namespace :v1 do
+      resources :posts
+    end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
