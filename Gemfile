@@ -23,11 +23,15 @@ gem 'jquery-rails'
 
 gem "active_model_serializers"
 
+gem 'ember-rails'
+gem 'ember-source', '~> 1.5.0'
+gem 'ember-data-source', '~> 1.0.0.beta.7'
+gem 'showdown-rails'
+gem 'momentjs-rails'
 
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry'
-  gem 'rack-cors', :require => 'rack/cors'
 end
 
 group :development do
