@@ -7,7 +7,7 @@ class Api::V1::PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(params[:post])
+    @post = Post.create(post_params)
     render json: @post
   end
 
@@ -18,7 +18,13 @@ class Api::V1::PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    @post.update_attributes(params[:post])
+    @post.update_attributes(post_params)
     render json: @post
   end
+
+  private
+
+    def post_params
+      params.require(:post).permit(:title, :video_url, :author, :body, :date)
+    end 
 end
