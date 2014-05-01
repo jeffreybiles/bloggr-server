@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20140401075135) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
-    t.string   "videoUrl"
+    t.string   "video_url"
     t.string   "author"
     t.date     "date"
     t.string   "body"
