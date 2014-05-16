@@ -4,6 +4,7 @@ BloggrServer::Application.routes.draw do
     namespace :v1 do
       resources :posts
       resources :users
+      resources :sessions, only: [:create, :destroy]
     end
   end
 
