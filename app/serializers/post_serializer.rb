@@ -1,3 +1,3 @@
 class PostSerializer < ActiveModel::Serializer
-  attributes :id, :title, :video_url, :author, :date, :body
+  attributes :id, :title, :video_url, :author, :body, :updated_at, :created_at
 end

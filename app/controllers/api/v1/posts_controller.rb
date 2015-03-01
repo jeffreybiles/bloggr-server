@@ -30,6 +30,6 @@ class Api::V1::PostsController < ApplicationController
   private
 
     def post_params
-      params.require(:post).permit(:title, :video_url, :author, :body, :date)
+      params.require(:post).permit(:title, :video_url, :author, :body)
     end 
 end
