@@ -23,6 +23,7 @@ gem 'jquery-rails'
 
 gem "active_model_serializers"
 
+gem 'faker'
 
 group :test, :development do
   gem 'rspec-rails'
