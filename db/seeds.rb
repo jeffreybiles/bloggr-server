@@ -25,6 +25,8 @@ end
     author: Faker::Name.name,
     title: link_bait,
     created_at: Faker::Date.between(6.months.ago, 2.months.ago),
-    updated_at: Faker::Date.between(4.months.ago, 1.day.ago)
+    updated_at: Faker::Date.between(4.months.ago, 1.day.ago),
+    body: Faker::Lorem.sentence(5),
+    video_url: Faker::Internet.url
   )
 end
